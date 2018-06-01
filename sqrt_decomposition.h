@@ -11,6 +11,12 @@ class sqrtDecomposition
     vector<int> first_inception;
     int sqrt_len;
 public:
+    sqrtDecomposition():
+        sqrt_len(0),
+        arr(0),
+        sqrt_arr(0),
+        first_inception(0)
+    {}
     build(vector<pair<int, int>> a, vector<int> first_inc)
     {
         first_inception = first_inc;
