@@ -26,7 +26,7 @@ void structLCA::build()
 {
     first_inception.resize(way.size());
     dfs(root, -1, 0);
-    find_min.build(arr, first_inception);
+    find_min.build(&arr, &first_inception);
 }
 
 int structLCA::get_lca(int u, int v)
