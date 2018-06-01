@@ -16,11 +16,11 @@ class structLCA
     binTree find_min;//both of this class work, and you can use any of them
     void dfs(int now, int pred, int h);
 public:
-    structLCA(int new_root):
-        root(new_root)
-    {};
     structLCA():
         root(1)
+    {};
+    structLCA(const int &new_root):
+        root(new_root)
     {};
     void push(int u, int v);
     void build();
