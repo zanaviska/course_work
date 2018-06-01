@@ -31,12 +31,12 @@ class binTree
         return min(minimum(2*v, l, mid, x, mid), minimum(2*v+1, mid+1, r, mid+1, y));
     }
 public:
-    build(vector<pair<int, int>> arr, vector<int> first_inc)
+    build(vector<pair<int, int>>* arr, vector<int>* first_inc)
     {
-        a = arr;
-        first_inception = first_inc;
-        tree.resize(4*arr.size());
-        making(1, 0, arr.size()-1);
+        a = *arr;
+        first_inception = *first_inc;
+        tree.resize(4*arr->size());
+        making(1, 0, arr->size()-1);
     }
     int get_min(int u, int v)
     {
