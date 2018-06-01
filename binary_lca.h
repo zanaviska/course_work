@@ -15,11 +15,14 @@ class binaryLCA
     bool upper(int higer, int toler);
     void dfs(int now, int pred);
 public:
-    binaryLCA(int new_root):
-        root(new_root)
-    {};
     binaryLCA():
+        ln(0),
         root(1)
+    {};
+
+    binaryLCA(int new_root):
+        ln(0),
+        root(new_root)
     {};
     void push(int u, int v);
     void build();
